@@ -41,6 +41,8 @@ const TextPlantName = styled.Text`
   font-weight: bold;
 `;
 const ImagePlants = styled.Image`
+  height: 200px;
+  width: 200px;
   margin-top: 200;
   margin-left: 50;
 `;
