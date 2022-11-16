@@ -21,9 +21,9 @@ const Plants = () => {
           <TextPlantType>{plants.type}</TextPlantType>
           <TextPlantName>{plants.name}</TextPlantName>
           <Text>{plants.etat}</Text>
-          <ImagePlants source={plants.image} />
-          <Text>A Propos de moi ! </Text>
-          <Text>{plants.lorem}</Text>
+          <ImagePlants source={{uri: plants.image}} />
+          <TextDescription>A Propos de moi !</TextDescription>
+          <TextDescription>{plants.lorem}</TextDescription>
         </View>
       ))}
     </ScrollViewPlants>
@@ -43,6 +43,10 @@ const TextPlantName = styled.Text`
 const ImagePlants = styled.Image`
   margin-top: 200;
   margin-left: 50;
+`;
+
+const TextDescription = styled.Text`
+  text-align: center;
 `;
 
 export default Plants;
