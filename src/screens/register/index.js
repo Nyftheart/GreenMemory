@@ -13,7 +13,7 @@ const Register = () => {
   const [password, setPassword] = useState("");
   const [verifPassword, setVerifPassword] = useState("");
 
-  // const {register} = useContext(AuthContext);
+  const {register} = useContext(AuthContext);
 
   return (
     <StyleSafeAreaView>
@@ -43,11 +43,8 @@ const Register = () => {
         />
         <FormSubmit 
           value="Envoyer" 
-        />
-        {/* <FormSubmit 
-          value="Envoyer" 
           onPress={() => register(email, password)}
-        /> */}
+        />
       </StyleView>
     </StyleSafeAreaView>
   )
