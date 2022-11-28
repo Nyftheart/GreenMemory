@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {Text, View, Image} from 'react-native';
+import {Text, View} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
 import styled from 'styled-components';
 import {getPlants} from '../../actions/plants';
@@ -32,19 +32,19 @@ const Plants = () => {
 
 const ScrollViewPlants = styled.ScrollView``;
 const TextPlantType = styled.Text`
-  font-size: 20;
+  font-size: 20px;
   text-align: left;
 `;
 const TextPlantName = styled.Text`
-  font-size: 25;
+  font-size: 25px;
   text-align: left;
   font-weight: bold;
 `;
 const ImagePlants = styled.Image`
   height: 200px;
   width: 200px;
-  margin-top: 200;
-  margin-left: 50;
+  margin-top: 200px;
+  margin-left: 50px;
 `;
 
 const TextDescription = styled.Text`
